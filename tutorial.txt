@@ -1,0 +1,20 @@
+Criar uma máquina virtual no EC2 da AWS:
+https://aws.amazon.com/pt/getting-started/tutorials/launch-a-virtual-machine/
+
+Conectar a instância da máquina virtual:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+Comandos:
+QUANDO USAR AMI(Amazon Machine Image) PROCURAR OS MESMOS COMANDOS QUE UM LINUX Fedora
+sudo su - usar usuário root no linux
+yum - igual apt-get
+instalando python:
+	sudo yum install gcc openssl-devel bzip2-devel libffi-devel
+	cd /opt
+	wget https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tgz
+	tar xzf Python-3.8.0.tgz
+	cd Python-3.8.0
+	sudo ./configure --enable-optimizations
+	sudo make altinstall
+	cd ..
+	sudo rm Python-3.8.1.tgz
